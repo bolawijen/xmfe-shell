@@ -1,0 +1,18 @@
+{
+  "name": "xmfe-shell",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": "./dist/main.js",
+    "./tanstack-react-router.js": "./dist/shells/tanstack-react-router.js"
+  },
+  "scripts": {
+    "build": "bun build.ts",
+    "dev": "bun --watch build.ts"
+  },
+  "peerDependencies": {
+    "@tanstack/react-router": "^1",
+    "react": "^18||^19",
+    "react-router-dom": "^6"
+  }
+}
